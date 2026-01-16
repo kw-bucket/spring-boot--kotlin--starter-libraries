@@ -1,4 +1,4 @@
-package com.kw.starter.mailing.dto.downstream
+package com.kw.starter.email.dto.downstream
 
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.PropertyNamingStrategy
@@ -27,25 +27,28 @@ fun EmailRequest.asMap(): MultiValueMap<String, Any> {
     map.add("subject", this.subject)
     map.add("body", this.body)
 
-    this.cc?.takeIf {
-        it.isNotBlank()
-    }?.also {
-        map.add("emails_cc", it)
-    }
+    this.cc
+        ?.takeIf {
+            it.isNotBlank()
+        }?.also {
+            map.add("emails_cc", it)
+        }
 
-    this.bcc?.takeIf {
-        it.isNotBlank()
-    }?.also {
-        map.add("emails_bcc", it)
-    }
+    this.bcc
+        ?.takeIf {
+            it.isNotBlank()
+        }?.also {
+            map.add("emails_bcc", it)
+        }
 
-    this.files?.map {
-        FileSystemResource(it)
-    }?.takeIf {
-        it.isNotEmpty()
-    }?.also {
-        map.addAll("files", it)
-    }
+    this.files
+        ?.map {
+            FileSystemResource(it)
+        }?.takeIf {
+            it.isNotEmpty()
+        }?.also {
+            map.addAll("files", it)
+        }
 
     return map
 }

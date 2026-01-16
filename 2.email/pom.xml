@@ -13,10 +13,10 @@
 <!--        <relativePath>../parent/pom.xml</relativePath>-->
     </parent>
 
-    <artifactId>spring-boot--kotlin--kw-2.upstream-api</artifactId>
+    <artifactId>spring-boot--kotlin--kw-2.email</artifactId>
     <version>1.x-SNAPSHOT</version>
-    <name>kw-starter-upstream-api</name>
-    <description>Provide upstream api</description>
+    <name>kw-starter-email-api-service</name>
+    <description>Provide upstream email api service</description>
 
     <properties>
         <starter-common.version>1.x-SNAPSHOT</starter-common.version>
@@ -34,7 +34,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.kw</groupId>
-                <artifactId>starter</artifactId>
+                <artifactId>spring-boot--kotlin--kw-1.starter</artifactId>
                 <version>${starter-common.version}</version>
             </dependency>
         </dependencies>
