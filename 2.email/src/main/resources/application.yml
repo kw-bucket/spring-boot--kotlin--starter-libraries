@@ -16,6 +16,7 @@
 #      body-template: 'body-template.html'
 #
 #api:
-#  mailing:
+#  notification:
+#    base-url: https://xxx.yyy.zzz/notification
 #    endpoints:
-#      send-email: https://notification.service.io/api/v2/email
+#      send-email: ${api.notification.base-url}/api/v2/email

@@ -12,7 +12,7 @@
     <modules>
         <module>0.parent</module>
         <module>1.starter</module>
-        <module>2.upstream-api</module>
+        <module>2.email</module>
         <module>3.s3</module>
         <module>4.sftp</module>
     </modules>
