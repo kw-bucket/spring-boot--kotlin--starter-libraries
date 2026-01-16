@@ -27,7 +27,7 @@
             <dependency>
                 <groupId>com.kw</groupId>
                 <artifactId>spring-boot--kotlin--kw-1.starter</artifactId>
-                <version>${common.version}</version>
+                <version>${starter-common.version}</version>
             </dependency>
             <dependency>
                 <groupId>software.amazon.awssdk</groupId>
@@ -44,8 +44,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.ascendnano</groupId>
-            <artifactId>acm-nano-starter-common</artifactId>
+            <groupId>com.kw</groupId>
+            <artifactId>spring-boot--kotlin--kw-1.starter</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
